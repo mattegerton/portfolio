@@ -1,5 +1,6 @@
 @import "config";
 @import "menu";
+@import url("https://fonts.googleapis.com/css?family=Lato:200,300,400|Playfair+Display");
 
 * {
   box-sizing: border-box;
@@ -8,6 +9,7 @@
 body {
   @include background;
   background: $primary-color;
+  color: rgba(255, 255, 255, 0.952);
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -24,12 +26,18 @@ h3 {
 
   &.lg-heading {
     font-size: 6rem;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    span {
+      font-weight: 200;
+    }
   }
 
   &.sm-heading {
+    font-family: "Playfair Display", serif;
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 0.8), 0.5);
+    padding: 0.2rem 0.5rem;
   }
 }
 

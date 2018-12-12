@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:200,300,400|Playfair+Display");
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -14,19 +15,20 @@
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .bt-line:nth-child(1) {
-      background: #eece1a;
+      background: #ff1654e1;
       transform: rotate(45deg) translate(5px, 5px); }
     .menu-btn.close .bt-line:nth-child(2) {
       opacity: 0; }
     .menu-btn.close .bt-line:nth-child(3) {
-      background: #eece1a;
+      background: #ff1654e1;
       transform: rotate(-45deg) translate(7px, -6px); }
 
 * {
   box-sizing: border-box; }
 
 body {
-  background: #444;
+  background: #247ba0;
+  color: rgba(255, 255, 255, 0.952);
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -45,7 +47,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.5); }
+      background: rgba(36, 123, 160, 0.8); }
 
 h1,
 h2,
@@ -55,13 +57,20 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 6rem; }
+    font-size: 6rem;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1rem; }
+    h1.lg-heading span,
+    h2.lg-heading span,
+    h3.lg-heading span {
+      font-weight: 200; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
+    font-family: "Playfair Display", serif;
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(70, 70, 70, 0.5); }
+    padding: 0.2rem 0.5rem; }
 
 a {
   color: #fff;
@@ -73,7 +82,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #ff1654e1; }
 
 main {
   padding: 4rem;
@@ -83,7 +92,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #eece1a;
+        color: #ff1654e1;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
