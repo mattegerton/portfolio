@@ -6,6 +6,15 @@
 // Desktop & Laptop
 
 @include mediaLg {
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+    grid-template-columns: 1fr;
+  }
 }
 
 // Tablets & Small Laptops
@@ -52,6 +61,16 @@
       border-radius: 50%;
       border: solid 3px $secondary-color;
     }
+  }
+
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+    grid-template-columns: 1fr;
   }
 }
 
