@@ -21,6 +21,10 @@
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
 }
 
 // Tablets & Small Laptops
@@ -81,6 +85,10 @@
 
   .projects {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-info {
+    grid-template-columns: 1fr;
   }
 }
 
